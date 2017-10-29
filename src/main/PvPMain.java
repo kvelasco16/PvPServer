@@ -7,6 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import kits.PaladinKit;
 import kits.RogueKit;
+import kits.WarriorKit;
 
 public class PvPMain extends JavaPlugin
 {
@@ -38,7 +39,8 @@ public class PvPMain extends JavaPlugin
 		}
 		else if (commandLabel.equalsIgnoreCase("Warrior"))
 		{
-			
+			WarriorKit wk = new WarriorKit();
+			wk.giveArcherKit(player);
 		}
 		else if (commandLabel.equalsIgnoreCase("Mage"))
 		{
