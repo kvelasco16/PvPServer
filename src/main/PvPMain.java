@@ -5,7 +5,10 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import kits.ArcherKit;
+import kits.MageKit;
 import kits.PaladinKit;
+import kits.PeasantKit;
 import kits.RogueKit;
 import kits.WarriorKit;
 
@@ -29,30 +32,33 @@ public class PvPMain extends JavaPlugin
 		if(commandLabel.equalsIgnoreCase("Paladin"))
 		{
 			PaladinKit pk = new PaladinKit();
-			pk.giveArcherKit(player);
+			pk.givePaladinKit(player);
 			
 		}
 		else if (commandLabel.equalsIgnoreCase("Rogue"))
 		{
 			RogueKit rk = new RogueKit();
-			rk.giveArcherKit(player);
+			rk.giveRogueKit(player);
 		}
 		else if (commandLabel.equalsIgnoreCase("Warrior"))
 		{
 			WarriorKit wk = new WarriorKit();
-			wk.giveArcherKit(player);
+			wk.giveWarriorKit(player);
 		}
 		else if (commandLabel.equalsIgnoreCase("Mage"))
 		{
-			
+			MageKit mk = new MageKit();
+			mk.giveMageKit(player);
 		}
 		else if (commandLabel.equalsIgnoreCase("Archer"))
 		{
-			
+			ArcherKit ak = new ArcherKit();
+			ak.giveArcherKit(player);
 		}
 		else if (commandLabel.equalsIgnoreCase("Peasant"))
 		{
-			
+			PeasantKit pst = new PeasantKit();
+			pst.givePeasantKit(player);
 		}
 		return false;
 	}

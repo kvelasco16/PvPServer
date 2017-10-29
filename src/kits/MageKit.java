@@ -5,25 +5,25 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 
-public class RogueKit 
+public class MageKit 
 {
-	public void giveRogueKit(Player player)
+	public void giveMageKit(Player player)
 	{
 		player.getInventory().clear();
-
+		
 		ItemStack chestArmor = new ItemStack(Material.LEATHER_CHESTPLATE);
 		ItemStack leggings = new ItemStack(Material.LEATHER_LEGGINGS);
 		ItemStack helmet = new ItemStack(Material.LEATHER_HELMET);
 		ItemStack boots = new ItemStack(Material.LEATHER_BOOTS);
-		ItemStack weapon = new ItemStack(Material.IRON_SWORD);
-		ItemStack ability1 = new ItemStack(Material.SULPHUR);
-		ItemStack ability2 = new ItemStack(Material.POTION);
-		ItemStack ability3 = new ItemStack(Material.DIAMOND_BOOTS);
-
-
-
+		ItemStack weapon = new ItemStack(Material.BLAZE_ROD);
+		ItemStack ability1 = new ItemStack(Material.SNOW_BALL);
+		ItemStack ability2 = new ItemStack(Material.MAGMA_CREAM);
+		ItemStack ability3 = new ItemStack(Material.ENDER_PEARL);
+		
+		
+		
 		PlayerInventory inv = player.getInventory();
-
+		
 		inv.setChestplate(chestArmor);
 		inv.setLeggings(leggings);
 		inv.setHelmet(helmet);

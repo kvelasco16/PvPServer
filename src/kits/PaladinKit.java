@@ -7,7 +7,7 @@ import org.bukkit.inventory.PlayerInventory;
 
 public class PaladinKit 
 {
-	public void giveArcherKit(Player player)
+	public void givePaladinKit(Player player)
 	{
 		player.getInventory().clear();
 		
@@ -17,7 +17,7 @@ public class PaladinKit
 		ItemStack boots = new ItemStack(Material.GOLD_BOOTS);
 		ItemStack weapon = new ItemStack(Material.GOLD_AXE);
 		ItemStack shield = new ItemStack(Material.SHIELD);
-		ItemStack ability1 = new ItemStack(Material.POTION);
+		ItemStack ability1 = new ItemStack(Material.SPLASH_POTION);
 		ItemStack ability2 = new ItemStack(Material.EMERALD);
 		ItemStack ability3 = new ItemStack(Material.IRON_INGOT);
 		

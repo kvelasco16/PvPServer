@@ -7,7 +7,7 @@ import org.bukkit.inventory.PlayerInventory;
 
 public class WarriorKit 
 {
-	public void giveArcherKit(Player player)
+	public void giveWarriorKit(Player player)
 	{
 		player.getInventory().clear();
 		
