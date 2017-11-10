@@ -9,5 +9,6 @@ public abstract class Physical implements Ability
 {
 	public abstract Entity getEntity();
 	
-	public abstract boolean causeDamage();
+	public abstract void canDamage(boolean bool);
+	public abstract void setDamage();
 }
