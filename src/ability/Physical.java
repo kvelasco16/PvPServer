@@ -13,7 +13,7 @@ public abstract class Physical implements Ability
 	private Sound sound;
 	
 	// This variable will control how powerful the ability will be for balancing purposes.
-	private int effectMultiplier;
+	private int abilityPower;
 	
 	public abstract Entity getEntity();
 	
@@ -48,4 +48,22 @@ public abstract class Physical implements Ability
 	{
 		return sound;
 	}
+	
+	public void setAbilityPower(int power)
+	{
+		this.abilityPower = power;
+	}
+	
+	public int getAbilityPower()
+	{
+		return abilityPower;
+	}	
 }
+
+
+
+
+
+
+
+
