@@ -57,7 +57,7 @@ public abstract class Physical implements Ability
 	public int getAbilityPower()
 	{
 		return abilityPower;
-	}	
+	}
 }
 
 
