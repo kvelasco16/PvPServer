@@ -1,10 +1,9 @@
 package ability;
 
-import org.bukkit.Sound;
+import org.bukkit.entity.Player;
 
 public interface Ability
 {
 	// Method for performing the ability itself
-	abstract void use();
-	abstract void playSound(Sound sound);
+	abstract void use(Player player);
 }
