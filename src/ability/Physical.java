@@ -15,9 +15,6 @@ public abstract class Physical implements Ability
 	// This variable will control how powerful the ability will be for balancing purposes.
 	private int abilityPower;
 	
-	public abstract Entity getEntity();
-	
-	
 	
 	public int getDamage()
 	{

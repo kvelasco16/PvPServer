@@ -1,6 +1,5 @@
 package ability;
 
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 
 public class Fireblast extends Physical
@@ -11,12 +10,4 @@ public class Fireblast extends Physical
 		// TODO Auto-generated method stub
 		
 	}
-
-	@Override
-	public Entity getEntity() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
 }
